@@ -4,6 +4,9 @@
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box; 
 }
+ html,body{
+    overflow-x:hidden;
+    }
 .hero {
 	height: 100vh;
 	width: 100%;
@@ -17,6 +20,12 @@ nav {
 	padding-top: 45px;
 	padding-left: 8%;
 	padding-right: 8%;
+}
+.fa-solid{
+	display: none;
+}
+#bx{
+	display: none;
 }
 .logo {
 	color: white;
@@ -307,5 +316,116 @@ footer p:nth-child(2){
 	color: red;
 	bottom: 35px;
 	font-size: 14px;
-	
+}
+#menu-icon{
+	font-size: 35px;
+	color: white;
+	cursor: pointer;
+	z-index: 10001;
+	display: none;
+}
+
+}
+@media (max-width: 1280px) {
+/*.hero{
+	font-size: 10px;
+	-webkit-background-size: 100%; 
+	-moz-background-size: 100%; 
+	-o-background-size: 100%; 
+	background-size: 100%; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover;
+	}*/
+	nav{
+		padding: 14px 2%;
+		transition: .2s;
+	}
+	/*.hero{
+		padding: 14px 2%;
+		transition: .2s;
+	}*/
+}
+@media (max-width: 1090px) {
+	#menu-icon{
+		display: block;
+	}
+	ul{
+		position: absolute;
+		top: 20%;
+		right: -100%;
+		width: 270px;
+		height: 55vh;
+		background: red;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		border-radius: 10px;
+		transition: all .5s ease;
+	}
+	ul li{
+		display: block;
+		margin: 10px 0;
+		padding: 0px 20px;
+		transition: all 0.50s ease;
+	}
+	ul li a:hover{
+		color: blue;
+		/*transform: translateY(5px);*/
+	}
+	ul a.active{
+		background: white;
+	}
+	ul.open{
+		right: 2%;
+	}
+	h1{
+		color: white;
+		margin: 20px 0px 20px;
+		font-size: 45px;
+	}
+	h3{
+		color: white;
+		font-size: 15px;
+		margin-bottom: 50px;
+	}
+	h4{
+		color: #759AAB;
+		letter-spacing: 1px;	
+		font-size: 20px
+		
+	}
+	.btn{
+		display: none;
+	}
+	.about-text h2{
+color: white;
+font-size: 45px;
+text-transform: capitalize;
+margin-bottom: 20px;
+}
+.about-text h5{
+	color: white;
+	letter-spacing: 2px;
+	font-size: 12px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+
+}
+.about-text p{
+	color: white;
+	letter-spacing: 1px;
+	font-size: 15px;
+	line-height: 28px;
+	margin-bottom: 45px;
+}
+.about img{
+	height: auto;
+	width: 230px;
+}
+.service h2{
+	font-size: 30px;
+	text-align: center;
+}
 }
